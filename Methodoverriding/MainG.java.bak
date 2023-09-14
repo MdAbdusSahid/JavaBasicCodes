@@ -1,0 +1,21 @@
+class G
+{
+	void m1(){
+		System.out.println("m1() in G");
+	}
+}
+class H extends G
+{
+	void m1(int i){
+		System.out.println("m1(int) in H");
+	}
+}
+class MainG
+{
+	public static void main(String args[])
+	{
+		H h1=new H();
+		h1.m1();
+		//h1.m1(5);
+	}
+}
